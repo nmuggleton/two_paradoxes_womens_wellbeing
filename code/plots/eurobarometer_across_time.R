@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------
-# Script name: plots/functions/eurobarometer_over_time.R
+# Script name: plots/functions/eurobarometer_across_time.R
 # Purpose of script: Create over-time plots for the Eurobarometer data
 # Author: Caspar Kaiser
 # Date created: 2024-09-08
