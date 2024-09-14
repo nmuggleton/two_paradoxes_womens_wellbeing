@@ -11,6 +11,10 @@ But, in summary, we run a comprehensive analysis of the gender differences in li
 
 ## Prerequisites
 
+### Replication and data requirements
+
+*Note.* Replication also requires access to the Gallup World Poll dataset. Various parts of the data cannot be made public, although we have included `DataSources.txt` files to clarify how we accessed the data. More information is available [here](https://www.gallup.com/analytics/318923/world-poll-public-datasets.aspx).
+
 ### Running the R Scripts
 
 To run the scripts in this repository, you will need a working installation of R with all the necessary package dependencies. We recommend using the `renv` package for managing dependencies and ensuring a reproducible environment.
