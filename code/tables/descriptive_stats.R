@@ -1,8 +1,7 @@
 # ------------------------------------------------------------------------
-# Script name: tables/descriptive_stats.R
+# Script name: tables/gwp_descriptive_stats.R
 # Purpose of script: Generate descriptive statistics for key variables 
-#                    related to life evaluations, positive/negative affect, 
-#                    and pain across genders and world regions.
+#                    in Gallup World Poll dataset.
 # Author: Naomi Muggleton
 # Date created: 2024-08-28
 # Date last modified: 2024-09-14
