@@ -5,7 +5,7 @@
 # positive/negative affect, and pain.
 # Author: Naomi Muggleton
 # Date created: 2024-07-29
-# Date last modified: 2024-09-08
+# Date last modified: 2024-09-14
 # ------------------------------------------------------------------------
 # Notes:
 #   This script contains functions to run time-based regression analyses,
@@ -123,8 +123,8 @@ plot_across_time <- function(outcome_var, model_type) {
   
   # Determine range of estimate values for y-axis limits
   range_values <- range(combined_results$countries$estimate)
-  lower_bound <- floor(min(range_values) * 100) / 100  # Floor to 2 decimal places
-  upper_bound <- ceiling(max(range_values) * 100) / 100  # Ceiling to 2 decimal places
+  lower_bound <- floor(min(range_values) * 100) / 100
+  upper_bound <- ceiling(max(range_values) * 100) / 100
   
   # Merge region-level coefficients for text labels
   combined_results$regions <- merge(
@@ -139,7 +139,7 @@ plot_across_time <- function(outcome_var, model_type) {
     geom_line(colour = 'grey85') +  # Country-level lines
     geom_hline(yintercept = 0, linetype = 'solid', linewidth = .25) +
     facet_wrap(~ REG2_GLOBAL, scales = 'free') +
-    geom_line(data = combined_results$regions, aes(colour = REG2_GLOBAL)) +  # Regional-level lines
+    geom_line(data = combined_results$regions, aes(colour = REG2_GLOBAL)) +
     geom_ribbon(
       data = combined_results$regions,
       aes(ymin = lowerCI, ymax = upperCI, fill = REG2_GLOBAL), alpha = .25,
@@ -180,7 +180,8 @@ plot_across_time <- function(outcome_var, model_type) {
 # Function to run the time trend plot generation for all combinations
 create_time_plots <- function() {
   combinations <- expand.grid(
-    outcome_var = outcome_vars, model_type = names(get_model_types(outcome_var, m1_vars, m2_vars, m3_vars))
+    outcome_var = outcome_vars,
+    model_type = names(get_model_types(outcome_var, m1_vars, m2_vars, m3_vars))
   )
   
   lapply(1:nrow(combinations), function(i) {
