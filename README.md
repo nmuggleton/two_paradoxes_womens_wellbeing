@@ -7,7 +7,7 @@
 
 This is a repository to accompany the review of the two gender wellbeing paradoxes by C. Kaiser, N. Muggleton, E. Quispe-Torreblanca, and J.-E. De Neve.
 Please see the code (and associated paper -- available from authors upon request) for a description of what the code does.
-But, in summary, we run a comprehensive analysis of the gender differences in live evaluation, positive and negative affect, and pain using data from the Gallup World Poll, Eurobarometer, and General Social Survey (GSS).
+But, in summary, we run a comprehensive analysis of the gender differences in live evaluation, positive and negative affect, and pain using data from the Gallup World Poll (GWP), Eurobarometer, and General Social Survey (GSS).
 
 ## Prerequisites
 
