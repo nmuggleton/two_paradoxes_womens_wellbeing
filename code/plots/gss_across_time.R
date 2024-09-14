@@ -10,9 +10,11 @@
 rm(list = ls())
 
 # Source utility functions ------------------------------------------------
+
 source('plots/functions/plot_parameters.R')
 
 # Load libraries ----------------------------------------------------------
+
 library(tidyverse)
 library(broom)
 library(ggsci)
@@ -26,6 +28,7 @@ library(haven)
 library(patchwork)
 
 # Load data ---------------------------------------------------------------
+
 gss_predictions <- file.path(
   '..', 'data', 'gss', 'data', 'gss_predictions.dta'
 ) %>%
@@ -34,6 +37,7 @@ gss_predictions <- file.path(
   mutate(sex = factor(sex))
 
 # Set plot theme ----------------------------------------------------------
+
 theme_set(theme_minimal(base_size = 10))
 
 #========================================================================
@@ -42,7 +46,7 @@ theme_set(theme_minimal(base_size = 10))
 
 create_plots <- function(data, var_prefix) {
 
-  # Set variable-specific titles and trends --------------------------------
+  # Set variable-specific titles and trends
   if (var_prefix == "happy") {
     title_stub <- "happiness"
     trend <- "B = -0.000896 (0.000408)*"
@@ -60,7 +64,7 @@ create_plots <- function(data, var_prefix) {
     trend <- "B = -0.001291 (0.000421)***"
   }
 
-  # Create absolute plot --------------------------------------------------
+  # Create absolute plot
   absolute <- ggplot(
     gss_predictions, aes(
       x = year, y = .data[[paste0(var_prefix, "_hat")]], group = sex, color = sex
@@ -100,7 +104,7 @@ create_plots <- function(data, var_prefix) {
       panel.grid.major.x = element_blank()
     )
 
-  # Save absolute plot -----------------------------------------------------
+  # Save absolute plot
   ggsave(
     plot = absolute,
     filename = paste0("../output/by_country_year/", var_prefix, "_levels.pdf"),
@@ -109,7 +113,7 @@ create_plots <- function(data, var_prefix) {
     units = 'in'
   )
 
-  # Create difference plot ------------------------------------------------
+  # Create difference plot
   difference <- ggplot(
     gss_predictions, aes(x = year, y = .data[[paste0(var_prefix, "_diff")]])
   ) +
@@ -144,7 +148,7 @@ create_plots <- function(data, var_prefix) {
       panel.grid.major.x = element_blank()
     )
 
-  # Save difference plot --------------------------------------------------
+  # Save difference plot
   ggsave(
     plot = difference,
     filename = paste0("../output/by_country_year/", var_prefix, "_difference.pdf"),
@@ -153,12 +157,12 @@ create_plots <- function(data, var_prefix) {
     units = 'in'
   )
 
-  # Combine absolute and difference plots ---------------------------------
+  # Combine absolute and difference plots
   combined <- absolute + difference +
     plot_layout(ncol = 2) +
     plot_annotation(title = NULL)
 
-  # Save combined plot ----------------------------------------------------
+  # Save combined plot
   ggsave(
     plot = combined,
     filename = paste0("../output/by_country_year/", var_prefix, "_combined.pdf"),
