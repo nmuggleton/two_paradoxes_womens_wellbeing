@@ -1,7 +1,8 @@
 # ------------------------------------------------------------------------
 # Script name: plots/countries_across_time.R
 # Purpose of script: Analyse gender gap trends across time using linear 
-# models for life evaluations, positive/negative affect, and pain.
+#                    models for life evaluations, positive/negative affect,
+#                    and pain.
 # Author: Naomi Muggleton
 # Date created: 2024-07-29
 # Date last modified: 2024-09-08
