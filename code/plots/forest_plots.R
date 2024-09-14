@@ -67,5 +67,5 @@ outcome_vars <- c('cantril', 'positive_affect', 'negative_affect', 'pain')
 # Load and preprocess data
 load_and_preprocess_data()
 
-# Run models for all outcome variables and model types
+# Generate forest plots
 create_forest_plots()
