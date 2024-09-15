@@ -1,2 +1,1 @@
-
-This can be purchased from Gallup. For more information, see https://www.gallup.com/analytics/318875/global-research.aspx.
+gwp_2023.csv: This can be purchased from Gallup. For more information, see https://www.gallup.com/analytics/318875/global-research.aspx.
