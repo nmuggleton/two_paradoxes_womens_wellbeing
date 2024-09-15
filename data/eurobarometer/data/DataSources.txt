@@ -1,2 +1,9 @@
-
-This can be accessed from https://www.gesis.org/en/eurobarometer-data-service/data-and-documentation.
+harmonised_EB_2004-2021_v3-0-0.dta: this is from https://search.gesis.org/research_data/SDN-10.7802-2539.
+ZA3521.dta: this is from https://search.gesis.org/research_data/ZA3521.
+ZA7848.dta: this is from https://search.gesis.org/research_data/ZA7848.
+ZA7888.dta: this is from https://search.gesis.org/research_data/ZA7888.
+ZA7902.dta: this is from https://search.gesis.org/research_data/ZA7902.
+ZA7953.dta: this is from https://search.gesis.org/research_data/ZA7953.
+ZA7997.dta: this is from https://search.gesis.org/research_data/ZA7997.
+ZA8779.dta: this is from https://search.gesis.org/research_data/ZA8779.
+ZA3938.dta: this is from https://search.gesis.org/research_data/ZA3938.
