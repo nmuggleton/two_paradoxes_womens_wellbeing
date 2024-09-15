@@ -15,10 +15,7 @@
 *0.1. Set file path
 *-------------------------------------
 
-*Work
-*global path "/Users/u2272701/Library/CloudStorage/OneDrive-UniversityofWarwick/gender_wellbeing/gss_and_eurobarometer/eurobarometer/data"
-*Private
-global path "/Users/casparkaiser/Library/CloudStorage/OneDrive-UniversityofWarwick/gender_wellbeing/gss_and_eurobarometer/eurobarometer/data"
+global path "../data/eurobarometer/data"
 
 *=====================================
 *	1. Merge waves
