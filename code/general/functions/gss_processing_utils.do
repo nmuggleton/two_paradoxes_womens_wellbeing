@@ -14,7 +14,7 @@ set scheme plottig
 *	1.0. Set path and load
 *-------------------------------------
 
-global path "/Users/casparkaiser/Library/CloudStorage/OneDrive-UniversityofWarwick/gender_wellbeing/gss_analysis"
+global path "../data/eurobarometer/data"
 use "$path/gss7222_r3a.dta", clear
 
 *-------------------------------------
