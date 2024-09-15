@@ -1,6 +1,6 @@
 # Two Paradoxes in Women's Wellbeing
 
-[![r](https://img.shields.io/badge/R-4.1.1-blue)](https://shields.io/) ![StataMin](https://img.shields.io/badge/stata-red) [![license](https://img.shields.io/badge/License-MIT-brightgreen)](https://shields.io/)
+[![r](https://img.shields.io/badge/R-4.1.1-blue)](https://shields.io/) ![StataMin](https://img.shields.io/badge/stata-18-red) [![license](https://img.shields.io/badge/License-MIT-brightgreen)](https://shields.io/)
 
 
 ## Introduction
